@@ -136,7 +136,7 @@ void StdIOCallback::setFilePointer(int64 Offset,seek_mode Mode)
     }
   } else {
     ostringstream Msg;
-    Msg<<"Failed to seek file "<<File<<" to offset "<<static_cast<unsigned long>(Offset)<<" in mode "<<Mode;
+    Msg<<"Failed to seek file "<<File<<" to offset "<<Offset<<" in mode "<<Mode;
     throw CRTError(Msg.str());
   }
 }
